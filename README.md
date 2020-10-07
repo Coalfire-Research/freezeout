@@ -16,9 +16,11 @@ This is not a new thing, but I did some work on an engagement that I thought I'd
 
 Kerberos will allow for username queries with no penalties (no chance of lockouts, and likely not logged). You can blast the DC with hundreds of thousands of queries, and it will helpfully tell you if it's a valid name or not.
 
-Nmap has a script for this, as well as metasploit (gather/kerberos_enumusers). I prefered the MSF modulule as it so graciously logged everything and seemed more reliable than the nmap script. Quite a bit more reliable actually, recommended.
+Nmap has a script for this, as well as metasploit (gather/kerberos_enumusers). I prefered the MSF modulule as it so graciously logged everything and seemed more reliable than the nmap script. Quite a bit more reliable actually. I found another tool, kerbrute, that is faster, more reliable, and more feature rich than either of those: kerbrute. Recommended!!
+- [kerbrute](https://github.com/ropnop/kerbrute)  << Recommended! 
 - [MSF](https://www.rapid7.com/db/modules/auxiliary/gather/kerberos_enumusers)
 - [nmap](https://nmap.org/nsedoc/scripts/krb5-enum-users.html)
+
 
 ## Cool story bro, so what?
 OK, OK, chill. Once you have a list of actual usernames, you can proceed to lateral spray passwords to hopefully get some real creds up in the joint.

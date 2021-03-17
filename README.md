@@ -9,7 +9,7 @@ Notes on user enumeration, password spraying, a list of last names and a script 
 ## OSINT's cool and all..
 ..and it's definitely useful, but, it probably won't yield the raw number of accounts needed to get lucky with lateral spraying. 
 
-What's the interpid pentester to do before they freeze to death and the wolves decend?
+What's the intrepid pentester to do before they freeze to death and the wolves decend?
 
 ## Kerberos to the rescue
 This is not a new thing, but I did some work on an engagement that I thought I'd pack up and ship to hopefully save someone some time if they end up in the predicamant I was in.
@@ -37,6 +37,7 @@ There are so many options, I can't (won't) get into it, but here's a couple bone
 
 - MSF has a module, although I think it's likely to lockout everyone if not kept on a short leash.
 - CME will enumerate as well, but again, it'll lock everyone out.
+- kerbrute, yes will spray passwords as well... but again, lockout. 
 
 I slapped together a simple shell script (slowride.sh) that let CME do the user loop and gave it a single password, then slept for 15 minutes. 
 
